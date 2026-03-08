@@ -97,6 +97,55 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 .skill-fill.ui{background:#ffccd5;}
 .skill-fill.figma{background:#b5c7ff;}
 
+/* SKILLS FLEX CONTAINER */
+.skills-flex {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Skill Bars (Left) */
+.skills-container {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+/* Tech Stack (Right) */
+.tech-stack {
+  flex: 1 1 250px;
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-icon:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.tech-icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
 /* PROJECTS */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:30px;}
 .project-card{position:relative;background:white;padding:20px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s;cursor:pointer;}
@@ -144,5 +193,13 @@ footer{text-align:center;padding:30px;background:white;margin-top:60px;box-shado
     margin-top:20px;
     width:200px;
     height:200px;
+  }
+  .skills-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-stack {
+    grid-template-columns: repeat(4, 60px);
+    margin-top: 30px;
   }
 }
