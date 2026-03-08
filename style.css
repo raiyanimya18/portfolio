@@ -286,6 +286,21 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
 /* CONTACT & FOOTER */
 #contact p{margin-top:10px;}
+/* Contact links styling */
+.contact-link {
+  display: inline-block;
+  text-decoration: none;
+  background: #cdb4db;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  background: #a2d2ff;
+}
 footer{text-align:center;padding:30px;background:white;margin-top:60px;box-shadow:0 -5px 15px rgba(0,0,0,0.05);}
 
 /* CURSOR */
