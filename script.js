@@ -37,9 +37,9 @@ function showSkills(){
   if(sectionTop < window.innerHeight - 100){
     document.querySelector(".html").style.width = "90%";
     document.querySelector(".css").style.width = "85%";
-    document.querySelector(".js").style.width = "70%";
+    document.querySelector(".js").style.width = "90%";
     document.querySelector(".ui").style.width = "80%";
-    document.querySelector(".figma").style.width = "85%";
+    document.querySelector(".figma").style.width = "70%";
   }
 }
 window.addEventListener("scroll", showSkills);
