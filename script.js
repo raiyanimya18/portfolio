@@ -22,11 +22,19 @@ function typing(){
 }
 typing();
 
-// SMOOTH SCROLL
-document.querySelectorAll("a").forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
+// SMOOTH SCROLL (only for in-page hash links)
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    const targetSelector = this.getAttribute("href");
+    const target = document.querySelector(targetSelector);
+
+    // Let the browser handle links if target section does not exist.
+    if (!target) {
+      return;
+    }
+
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"});
+    target.scrollIntoView({ behavior: "smooth" });
   });
 });
 
