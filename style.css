@@ -42,6 +42,11 @@ section{padding:120px 10%;background: rgba(255,255,255,0.15);backdrop-filter: bl
 section:not(.hero){opacity:0;transform:translateY(40px);transition:0.6s;}
 h2{font-size:32px;margin-bottom:20px;}
 
+#about p {
+  margin-bottom: 20px; /* adds space between paragraphs */
+  line-height: 1.7;     /* makes it more readable */
+}
+
 /* SKILLS */
 .skills-container{max-width:700px;margin-top:40px;}
 .skill-bar{margin-bottom:25px;background: rgba(255,255,255,0.25);backdrop-filter: blur(15px);-webkit-backdrop-filter: blur(15px);border-radius: 15px;box-shadow: 0 8px 32px rgba(0,0,0,0.1);transition: 0.3s ease;border: 1px solid rgba(255,255,255,0.2);}
