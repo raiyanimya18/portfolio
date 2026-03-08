@@ -5,7 +5,11 @@ html{scroll-behavior:smooth;scroll-padding-top:80px;}
 
 /* NAVBAR */
 .navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;position:fixed;top:0;width:100%;background:white;box-shadow:0 5px 15px rgba(0,0,0,0.05);z-index:1000;}
-.logo{font-weight:600;font-size:20px;}
+.logo img {
+  height: 50px;       /* adjust size as needed */
+  width: auto;
+  object-fit: contain;
+}
 .nav-links{display:flex;list-style:none;}
 .nav-links li{margin-left:25px;}
 .nav-links a{text-decoration:none;color:#444;font-weight:500;transition:0.3s;}
