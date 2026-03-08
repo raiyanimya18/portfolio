@@ -140,24 +140,133 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   object-fit: contain;
 }
 
-/* PROJECTS */
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:30px;}
-.project-card{position:relative;background:white;padding:20px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s;cursor:pointer;}
-.project-card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 15px 35px rgba(0,0,0,0.15);}
+/* PROJECTS SECTION */
 
-/* IMAGE HOVER + OPEN TEXT */
-.project-img-container{position:relative;overflow:hidden;border-radius:10px;}
-.project-img-container img{width:100%;height:180px;object-fit:cover;transition:filter 0.3s ease, transform 0.3s ease;}
-.project-img-container:hover img{filter:blur(3px);transform:scale(1.05);}
-.open-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-weight:600;font-size:24px;opacity:0;pointer-events:none;transition:opacity 0.3s ease;}
-.project-img-container:hover .open-text{opacity:1;}
-.project-info{position:static;opacity:1;background:none;backdrop-filter:none;color:#444;}
-.project-info h3{margin-bottom:10px;font-size:18px;}
-.project-info p{font-size:14px;margin-bottom:10px;}
-.project-tags{margin-bottom: 15px;display: flex;flex-wrap: wrap;gap: 5px;}
-.project-tags span{background: #f0f0f0;color: #444;font-weight: 500;padding: 4px 10px;border-radius: 12px;white-space: normal;}
-.project-links a{text-decoration:none;background:#cdb4db;color:white;padding:6px 12px;border-radius:15px;font-size:12px;margin-right:5px;transition:0.3s;}
-.project-links a:hover{background:#a2d2ff;}
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Card styling */
+.project-card {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  /* Removed cursor:pointer to avoid blocking link clicks */
+}
+
+/* Card hover effect */
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Image container */
+.project-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Image hover blur & scale */
+.project-img-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.project-img-container:hover img {
+  filter: blur(3px);
+  transform: scale(1.05);
+}
+
+/* Hover "View Here" link */
+.open-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  opacity: 0;
+  pointer-events: auto; /* clickable */
+  text-decoration: none;
+  padding: 8px 15px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  display: inline-block; /* clickable area */
+  z-index: 10; /* above image */
+}
+
+.project-img-container:hover .open-text {
+  opacity: 1;
+}
+
+.project-img-container .open-text:hover {
+  background: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+/* Project info */
+.project-info {
+  position: static;
+  opacity: 1;
+  background: none;
+  backdrop-filter: none;
+  color: #444;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.project-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Tags */
+.project-tags {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-tags span {
+  background: #f0f0f0;
+  color: #444;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: normal;
+}
+
+/* Project buttons */
+.project-links a {
+  text-decoration: none;
+  background: #cdb4db;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #a2d2ff;
+}
 
 /* CONTACT & FOOTER */
 #contact p{margin-top:10px;}
