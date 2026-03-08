@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 });
 
 // TYPING EFFECT
-const text = "I design and build creative web experiences.";
+const text = "I build smart, connected digital experiences that blend design and technology.";
 let index = 0;
 function typing(){
   if(index < text.length){
