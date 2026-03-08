@@ -142,7 +142,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
 /* PROJECTS SECTION */
 
-/* Grid layout */
+/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -150,7 +150,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   margin-top: 30px;
 }
 
-/* Card styling */
+/* Project Card */
 .project-card {
   position: relative;
   background: white;
@@ -158,7 +158,6 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
-  /* Removed cursor:pointer to avoid blocking link clicks */
 }
 
 /* Card hover effect */
@@ -174,7 +173,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   border-radius: 10px;
 }
 
-/* Image hover blur & scale */
+/* Image hover effect */
 .project-img-container img {
   width: 100%;
   height: 180px;
@@ -197,14 +196,15 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   font-weight: 600;
   font-size: 24px;
   opacity: 0;
-  pointer-events: auto; /* clickable */
   text-decoration: none;
   padding: 8px 15px;
   background: rgba(0,0,0,0.5);
   border-radius: 8px;
   transition: opacity 0.3s ease, background 0.3s ease;
-  display: inline-block; /* clickable area */
+  display: inline-block;
+  pointer-events: auto; /* clickable */
   z-index: 10; /* above image */
+  cursor: pointer;
 }
 
 .project-img-container:hover .open-text {
@@ -213,10 +213,9 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
 .project-img-container .open-text:hover {
   background: rgba(0,0,0,0.7);
-  cursor: pointer;
 }
 
-/* Project info */
+/* Project Info */
 .project-info {
   position: static;
   opacity: 1;
@@ -252,7 +251,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
   white-space: normal;
 }
 
-/* Project buttons */
+/* Buttons */
 .project-links a {
   text-decoration: none;
   background: #cdb4db;
