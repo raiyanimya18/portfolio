@@ -98,28 +98,22 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 .skill-fill.figma{background:#b5c7ff;}
 
 /* SKILLS FLEX CONTAINER */
-.skills-flex {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.skills-flex{
+  display:flex;
+  gap:60px;
+  align-items:flex-start;
 }
 
-/* Skill Bars (Left) */
-.skills-container {
-  flex: 1 1 400px;
-  max-width: 500px;
+.skills-container{
+  flex:2;
 }
 
-/* Tech Stack (Right) */
-.tech-stack {
-  flex: 1 1 250px;
-  display: grid;
-  grid-template-columns: repeat(2, 80px);
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.tech-stack{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(2,80px);
+  gap:20px;
+  justify-content:center;
 }
 
 .tech-icon {
@@ -160,8 +154,8 @@ box-shadow:0 10px 30px rgba(0,0,0,0.15);
 .project-info{position:static;opacity:1;background:none;backdrop-filter:none;color:#444;}
 .project-info h3{margin-bottom:10px;font-size:18px;}
 .project-info p{font-size:14px;margin-bottom:10px;}
-.project-tags{margin-bottom:10px;}
-.project-tags span{background:#f0f0f0;color:#444;font-weight:500;padding:4px 10px;border-radius:12px;margin-right:5px;}
+.project-tags{margin-bottom: 15px;display: flex;flex-wrap: wrap;gap: 5px;}
+.project-tags span{background: #f0f0f0;color: #444;font-weight: 500;padding: 4px 10px;border-radius: 12px;white-space: normal;}
 .project-links a{text-decoration:none;background:#cdb4db;color:white;padding:6px 12px;border-radius:15px;font-size:12px;margin-right:5px;transition:0.3s;}
 .project-links a:hover{background:#a2d2ff;}
 
