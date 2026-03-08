@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purrfect Feeder</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar">
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Raiyani Logo">
+</a>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</nav>
+</header>
+
+<!-- PROJECT HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Purrfect Feeder</h1>
+<p>An IoT-based smart pet feeder that automates feeding schedules, monitors food levels in real time, and allows remote control through a mobile app.</p>
+</div>
+</section>
+
+<!-- PROJECT DETAILS -->
+<section id="project-details">
+
+<div class="about-container" style="flex-direction: column; gap: 40px;">
+
+<!-- Overview -->
+<div class="about-text">
+<h2>Overview</h2>
+<p>Purrfect Feeder is an IoT-based smart pet feeder designed to automate and remotely manage feeding schedules for cats. Using the Arduino Nano 33 IoT, this system integrates sensors, actuators, and cloud services to ensure timely feeding, monitor food levels, and provide insights through a mobile app.</p>
+</div>
+
+<!-- Problem Statement -->
+<div class="about-text">
+<h2>Problem Statement</h2>
+<p>Many pet owners struggle to maintain consistent feeding schedules due to work or travel commitments. Irregular feeding can lead to health issues such as overweight or digestive problems. Traditional solutions like asking friends or pet hotels are costly or impractical.</p>
+</div>
+
+<!-- Project Significance -->
+<div class="about-text">
+<h2>Project Significance</h2>
+<p>Purrfect Feeder offers a reliable, convenient, and affordable solution. Real-time monitoring and automated feeding reduce the risk of overfeeding or underfeeding. Owners can track feeding schedules and receive alerts through a mobile app, ensuring their pets are cared for even when away.</p>
+</div>
+
+<!-- System Architecture -->
+<div class="about-text">
+<h2>System Architecture</h2>
+<p>The system follows a three-layer IoT architecture: Hardware, Connectivity, and Cloud. The Arduino Nano 33 IoT controls sensors and actuators. Wi-Fi connects the device to the cloud (ThingSpeak), enabling real-time monitoring and control via a mobile app.</p>
+<img class="project-detail-image" src="images/system-architecture.png" alt="Purrfect Feeder System Architecture">
+</div>
+
+<!-- System Integration -->
+<div class="about-text">
+<h2>System Integration</h2>
+<p>The ultrasonic sensor monitors food levels, while the servo motor dispenses food. Data is transmitted via Wi-Fi to ThingSpeak, accessible through a mobile app built with MIT App Inventor. This integration ensures seamless automation and remote management.</p>
+</div>
+
+<!-- Data Management and Analytics -->
+<div class="about-text">
+<h2>Data Management & Analytics</h2>
+<p>Sensor data is uploaded to ThingSpeak and displayed as graphs and alerts. The system supports trend analysis and threshold-based notifications, helping owners plan feeding schedules and maintain their pet's health.</p>
+<img class="project-detail-image" src="images/data-analytics.png" alt="Food level graph in ThingSpeak">
+</div>
+
+<!-- Challenges -->
+<div class="about-text">
+<h2>Challenges Faced</h2>
+<p>Challenges included mobile app development, sensor reliability, and integration of hardware and software. Solutions involved tutorials, troubleshooting, independent power sources for sensors, and extensive testing to ensure smooth operation.</p>
+</div>
+
+<!-- Future Improvements -->
+<div class="about-text">
+<h2>Future Improvements</h2>
+<p>Future improvements include integrating a weighing scale for precise portions, battery backup with solar options, smart home integration (Google Home, Alexa), and scalability for commercial use in shelters or veterinary clinics.</p>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Raiyani</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

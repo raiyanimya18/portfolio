@@ -84,6 +84,23 @@ border:6px solid white;
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
+/* PROJECT DETAILS PAGE (project1.html) */
+#project-details .about-container {
+  align-items: flex-start;
+}
+
+#project-details .about-text {
+  width: 100%;
+  text-align: left;
+}
+
+#project-details .project-detail-image {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 100%;
+  height: auto;
+}
+
 /* SKILLS */
 .skills-container{max-width:700px;margin-top:40px;}
 .skill-bar{margin-bottom:25px;background: rgba(255,255,255,0.25);backdrop-filter: blur(15px);-webkit-backdrop-filter: blur(15px);border-radius: 15px;box-shadow: 0 8px 32px rgba(0,0,0,0.1);transition: 0.3s ease;border: 1px solid rgba(255,255,255,0.2);}
@@ -290,6 +307,10 @@ footer{text-align:center;padding:30px;background:white;margin-top:60px;box-shado
   .about-container{
     flex-direction:column;
     text-align:center;
+  }
+  #project-details .about-container{
+    text-align:left;
+    align-items:flex-start;
   }
   .about-image img{
     margin-top:20px;
